@@ -25,6 +25,7 @@ class Form {
 
 
 
+
   hide() {
    //1.3-- USE A FUNÇÃO PARA DESAPARECER OS ELEMENTOS
   }
