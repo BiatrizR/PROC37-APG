@@ -8,19 +8,24 @@ var playerCount;
 //1--form.js criar elementos de classe
 
 function preload() {
-  backgroundImage = loadImage("./assets/background.png");
+  bgImg = loadImage("");
 }
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   database = firebase.database();
   game = new Game();
+  
+  //adicionar função de estado
   game.start();
-  bgImg = backgroundImage;
+  
+
 }
 
 function draw() {
-  background(bgImg);
+  background(0)
+  
+  //adicionar condição de mudança de estado
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
